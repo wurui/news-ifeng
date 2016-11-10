@@ -1,0 +1,123 @@
+.oxmod-news-ifeng{
+  /* CSS */
+  a{
+    color:inherit;
+  }
+  .news-li-pic{
+    display: none;
+    img{
+      width:80px;
+      height:60px;
+    }
+    float:left;
+    margin-left:-90px;
+  }
+  .news-li{
+    padding:5px 10px 5px 10px;
+    overflow: auto;
+    border-bottom: solid 1px #eee;
+    //box-shadow: 1px 1px 1px #eee;
+  }
+  .src-count-0{
+    padding-left:100px;
+    .news-li-pic{
+      display: block;
+    }
+  }
+  .news-title{
+    font-size:17px;
+    font-weight: 400;
+    line-height: 1.2;
+    //color:lightblue;
+  }
+  .news-bottom{
+    color:#999;
+    font-size:0;
+    padding-top: 5px;
+  }
+  .news-bottom-left,
+  .news-bottom-right{
+    display: inline-block;
+    width:50%;
+    font-size:14px;
+    box-sizing: border-box;
+  }
+  .news-bottom-right{
+    text-align: right;
+    background:url(comment.png) no-repeat right center;
+    background-size: contain;
+    padding-right:20px;
+  }
+
+  .news-li-news{
+    .news-title{
+      height:46px;
+    }
+  }
+  .news-li-img{
+    padding-left:10px;
+    .news-title{
+      height:20px;
+    }
+  }
+  .news-li-topic{
+    .topic-tag{
+      background-color: #f10;
+      color:#fff;
+      font-style: normal;
+      border-radius: 2px;
+      font-size:12px;
+      padding:1px 2px;
+      font-family: sans-serif;
+    }
+  }
+  .news-li-ad{
+    .news-bottom-right{
+      display: none;
+    }
+    .news-tag{
+
+      border-radius: 2px;
+      font-size:12px;
+      padding:1px 2px;
+      font-family: sans-serif;
+      color:#999;
+      border:solid 1px #99f;
+      transform: scale(.8);
+
+    }
+  }
+  .news-tag{
+    font-style: normal;
+  }
+  .news-imgs{
+    img{
+      width:32%;
+      max-height: 80px;
+      margin-left:2%;
+      &:first-child{
+        margin-left:0 !important;
+      }
+    }
+
+  }
+
+  .src-count-1{
+    .news-imgs{
+      img{
+        width:100%;
+        max-height: 200px;
+      }
+    }
+  }
+  .src-count-2{
+    .news-imgs{
+      img{
+        margin-left:2%;
+        width:49%;
+        max-height: 100px;
+      }
+    }
+  }
+}
+
