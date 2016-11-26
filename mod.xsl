@@ -8,6 +8,9 @@
         <div class="J_OXMod oxmod-news-ifeng" ox-mod="news-ifeng">
 
             <ul>
+                <xsl:if test="count(data/news/i) = 0">
+                    <li>NO Data!</li>
+                </xsl:if>
                 <xsl:for-each select="data/news/i">
                     <xsl:variable name="src-count" select="count(src/i)"/>
                     <li class="news-li news-li-{type} src-count-{$src-count}">
