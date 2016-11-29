@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="demo.xsl"?>
+<root>
+    <msg></msg>
+    <data>
+        <news>
+            <i>
+                <type>vedio</type>
+                <mainpic>//0.openxsl.com/img/fox.jpg</mainpic>
+                <tag>nice notebook</tag>
+                <comment>81214</comment>
+                <src>
+                    <i>//0.openxsl.com/img/fox.jpg</i>
+                </src>
+                <title>car</title>
+                <href>//0.openxsl.com/img/fox.jpg</href>
+                <content>good wallet</content>
+            </i>
+            <i>
+                <type>news</type>
+                <title>山西一官员“办公室不雅照”被疯传：给钱还没完没了</title>
+                <mainpic>asset/test.jpg</mainpic>
+                <tag>11:48</tag>
+                <comment>4583</comment>
+            </i>
+        </news>
+    </data>
+</root>

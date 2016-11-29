@@ -12,6 +12,8 @@
                 <mainpic>asset/test.jpg</mainpic>
                 <tag>11:48</tag>
                 <comment>4583</comment>
+                <href>news-detail?_id={{news_id}}</href>
+                <_id>98765</_id>
             </i>
             <i>
                 <type>img</type>
@@ -22,6 +24,7 @@
                     <i>asset/test.jpg</i>
                     <i>asset/test.jpg</i>
                 </src>
+                <href>news-detail?_id=1</href>
             </i>
             <i>
                 <type>news</type>

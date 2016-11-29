@@ -13,23 +13,31 @@
                 </xsl:if>
                 <xsl:for-each select="data/news/i">
                     <xsl:variable name="src-count" select="count(src/i)"/>
+                    <xsl:variable name="fullpath">
+                        <xsl:choose>
+                            <xsl:when test="contains(href,'{{news_id}}')">
+                                <xsl:value-of select="concat(substring-before(href,'{{news_id}}'),_id,substring-after(href,'{{news_id}}'))"/>
+                            </xsl:when>
+                            <xsl:otherwise><xsl:value-of select="href"/></xsl:otherwise>
+                        </xsl:choose>
+                    </xsl:variable>
                     <li class="news-li news-li-{type} src-count-{$src-count}">
 
                         <xsl:if test="mainpic">
                             <span class="news-li-pic">
-                                <a href="{href}">
+                                <a href="{$fullpath}">
                                     <img src="{mainpic}"/>
                                 </a>
                             </span>
                         </xsl:if>
                         <h3 class="news-title">
-                            <a href="{href}">
+                            <a href="{$fullpath}">
                                 <xsl:value-of select="title"/>
                             </a>
                         </h3>
                         <xsl:if test="$src-count &gt; 0">
                             <div class="news-imgs">
-                                <a href="{href}">
+                                <a href="{$fullpath}">
                                     <xsl:for-each select="src/i">
                                         <img src="{.}"/>
                                     </xsl:for-each>
