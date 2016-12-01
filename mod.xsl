@@ -8,7 +8,7 @@
         <div class="J_OXMod oxmod-news-ifeng" ox-mod="news-ifeng">
 
             <ul>
-                <xsl:if test="count(data/news/i) = 0">
+                <xsl:if test="count(data/news/i) &lt; 1">
                     <li>NO Data!</li>
                 </xsl:if>
                 <xsl:for-each select="data/news/i">
@@ -35,7 +35,7 @@
                                 <xsl:value-of select="title"/>
                             </a>
                         </h3>
-                        <xsl:if test="$src-count &gt; 0">
+                        <xsl:if test="$src-count > 0">
                             <div class="news-imgs">
                                 <a href="{$fullpath}">
                                     <xsl:for-each select="src/i">
