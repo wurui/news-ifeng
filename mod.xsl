@@ -6,12 +6,13 @@
     <xsl:template match="/root" name="news-ifeng">
         <!-- className 'J_OXMod' required  -->
         <div class="J_OXMod oxmod-news-ifeng" ox-mod="news-ifeng">
-
+            <xsl:variable name="commentlist" select="data/target-count/i"/>
             <ul>
                 <xsl:if test="count(data/news/i) &lt; 1">
                     <li>NO Data!</li>
                 </xsl:if>
                 <xsl:for-each select="data/news/i">
+                    <xsl:variable name="nid" select="_id"/>
                     <xsl:variable name="src-count" select="count(src/i)"/>
                     <xsl:variable name="fullpath">
                         <xsl:choose>
@@ -58,7 +59,8 @@
                                 </xsl:choose>
                             </span>
                             <span class="news-bottom-right">
-                                <xsl:value-of select="comment"/>
+
+                                <xsl:value-of select="$commentlist[tid= $nid]/num"/>
                             </span>
                         </div>
 

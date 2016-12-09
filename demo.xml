@@ -5,17 +5,29 @@
         <domain>local</domain>
     </env>
     <data>
+        <target-count>
+            <i>
+                <tid>n1</tid>
+                <num>12</num>
+            </i>
+            <i>
+                <tid>n2</tid>
+                <num>23</num>
+            </i>
+        </target-count>
         <news>
             <i>
+                <_id>n1</_id>
                 <type>news</type>
                 <title>山西一官员“办公室不雅照”被疯传：给钱还没完没了</title>
                 <mainpic>asset/test.jpg</mainpic>
                 <tag>11:48</tag>
                 <comment>4583</comment>
                 <href>news-detail?_id={{news_id}}</href>
-                <_id>98765</_id>
+
             </i>
             <i>
+                <_id>n2</_id>
                 <type>img</type>
                 <title>男子感动昔日朋友</title>
                 <tag>12:10</tag>
