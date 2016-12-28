@@ -7,7 +7,6 @@
       <head>
         <meta name="viewport" content="initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no"/>
         <title>news-ifeng Demo</title>
-        <link rel="stylesheet" type="text/css" href="https://oxm1.cc/js/require.js" />
         <link rel="stylesheet" type="text/css" href="https://oxm1.cc/css/ea.css" />
         <link rel="stylesheet" type="text/css" href="asset/index.css" />
         <script src="https://oxm1.cc/js/require.js"></script>
@@ -22,10 +21,11 @@
           paths: {
           zepto: 'https://oxm1.cc/js/zepto.min',
           mustache: 'https://oxm1.cc/js/mustache',
-          oxm:'https://oxm1.cc/oxm'
+          oxm:'https://oxm1.cc/oxm',
+          oxjs:'https://oxm1.cc/js/oxjs'
           }
           });
-          require(['zepto','asset/index'],function(undefine,Mod){
+          require(['zepto','oxjs','asset/index'],function(undefine,oxjs,Mod){
           Mod && Mod.init && Mod.init($('.J_OXMod'));
 
           })
