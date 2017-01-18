@@ -27,7 +27,7 @@
                         <xsl:if test="mainpic">
                             <span class="news-li-pic">
                                 <a href="{$fullpath}">
-                                    <img src="{mainpic}?x-oss-process=image/resize,w_20" lazy-w="100" lazy-src="{mainpic}"/>
+                                    <img src="//oxm1.cc/img/blank.png" lazy-w="100" lazy-src="{mainpic}"/>
                                 </a>
                             </span>
                         </xsl:if>
@@ -40,7 +40,7 @@
                             <div class="news-imgs">
                                 <a href="{$fullpath}">
                                     <xsl:for-each select="src/i">
-                                        <img lazy-src="{.}" lazy-w="300" src="{.}?x-oss-process=image/resize,w_20"/>
+                                        <img lazy-src="{.}" lazy-w="300" src="//oxm1.cc/img/blank.png"/>
                                     </xsl:for-each>
                                 </a>
                             </div>

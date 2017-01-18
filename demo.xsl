@@ -16,18 +16,17 @@
         <div class="layout">
           <xsl:call-template name="news-ifeng" />
         </div>
-        <script><![CDATA[
+          <script><![CDATA[
           require.config({
-          paths: {
-          zepto: 'https://oxm1.cc/js/zepto.min',
-          mustache: 'https://oxm1.cc/js/mustache',
-          oxm:'https://oxm1.cc/oxm',
-          oxjs:'https://oxm1.cc/js/oxjs'
-          }
+            paths: {
+              zepto: 'https://oxm1.cc/js/zepto.min',
+              mustache: 'https://oxm1.cc/js/mustache',
+              oxjs:'https://oxm1.cc/js/oxjs'
+            },
+            packages:[{name:"oxm",location:'https://oxm1.cc/oxm'}]
           });
           require(['zepto','oxjs','asset/index'],function(undefine,oxjs,Mod){
           Mod && Mod.init && Mod.init($('.J_OXMod'));
-
           })
         ]]></script>
       </body>

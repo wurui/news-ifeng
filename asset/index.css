@@ -1,6 +1,9 @@
 .oxmod-news-ifeng {
   /* CSS */
 }
+.oxmod-news-ifeng img {
+  background: url(//oxm1.cc/img/holder.jpg) no-repeat center center;
+}
 .oxmod-news-ifeng a {
   color: inherit;
 }
@@ -12,6 +15,7 @@
 .oxmod-news-ifeng .news-li-pic img {
   width: 80px;
   height: 60px;
+  background-size: cover;
 }
 .oxmod-news-ifeng .news-li {
   padding: 5px 10px 5px 10px;
@@ -98,5 +102,5 @@
 .oxmod-news-ifeng .src-count-2 .news-imgs img {
   margin-left: 2%;
   width: 49%;
-  max-height: 100px;
+  height: 80px;
 }
