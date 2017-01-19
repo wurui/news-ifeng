@@ -7,6 +7,9 @@
 .oxmod-news-ifeng a {
   color: inherit;
 }
+.oxmod-news-ifeng a:active {
+  color: #999;
+}
 .oxmod-news-ifeng .news-li-pic {
   display: none;
   float: left;
