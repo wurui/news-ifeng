@@ -27,7 +27,7 @@
                         <xsl:if test="mainpic">
                             <span class="news-li-pic">
                                 <a href="{$fullpath}">
-                                    <img src="//oxm1.cc/img/blank.png" lazy-w="100" lazy-src="{mainpic}"/>
+                                    <img src="//oxm1.cc/img/blank.png" lazy-w="100" lazy-src="{normalize-space(mainpic)}"/>
                                 </a>
                             </span>
                         </xsl:if>

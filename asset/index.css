@@ -22,11 +22,14 @@
   overflow: auto;
   border-bottom: solid 1px #eee;
 }
-.oxmod-news-ifeng .src-count-0 {
+.oxmod-news-ifeng li.src-count-0 {
   padding-left: 100px;
 }
-.oxmod-news-ifeng .src-count-0 .news-li-pic {
+.oxmod-news-ifeng li.src-count-0 .news-li-pic {
   display: block;
+}
+.oxmod-news-ifeng li.src-count-0 .news-title {
+  height: auto;
 }
 .oxmod-news-ifeng .news-title {
   font-size: 1.2em;
@@ -89,7 +92,7 @@
 }
 .oxmod-news-ifeng .news-imgs img {
   width: 32%;
-  max-height: 80px;
+  height: 72px;
   margin-left: 2%;
 }
 .oxmod-news-ifeng .news-imgs img:first-child {
@@ -97,10 +100,10 @@
 }
 .oxmod-news-ifeng .src-count-1 .news-imgs img {
   width: 100%;
-  max-height: 200px;
+  height: 200px;
 }
 .oxmod-news-ifeng .src-count-2 .news-imgs img {
   margin-left: 2%;
   width: 49%;
-  height: 80px;
+  height: 84px;
 }
