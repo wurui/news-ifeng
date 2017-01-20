@@ -116,6 +116,8 @@
   width: 49%;
   height: 84px;
 }
+.oxmod-news-ifeng .src-count-1 .news-title,
+.oxmod-news-ifeng .src-count-2 .news-title,
 .oxmod-news-ifeng .src-count-3 .news-title {
   max-height: 40px;
   min-height: 22px;
