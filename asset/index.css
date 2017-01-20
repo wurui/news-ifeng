@@ -1,8 +1,14 @@
 .oxmod-news-ifeng {
   /* CSS */
 }
-.oxmod-news-ifeng img {
-  background: url(//oxm1.cc/img/holder.jpg) no-repeat center center;
+.oxmod-news-ifeng img[lazy-type="bg"] {
+  background-size: cover;
+  background-position: center 0;
+  background-repeat: no-repeat;
+}
+.oxmod-news-ifeng img[lazy-src] {
+  background: url(//oxm1.cc/img/holder.jpg) no-repeat;
+  background-position: center center;
 }
 .oxmod-news-ifeng a {
   color: inherit;
@@ -109,4 +115,9 @@
   margin-left: 2%;
   width: 49%;
   height: 84px;
+}
+.oxmod-news-ifeng .src-count-3 .news-title {
+  max-height: 40px;
+  min-height: 22px;
+  height: auto;
 }

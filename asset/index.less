@@ -1,7 +1,13 @@
 .oxmod-news-ifeng{
   /* CSS */
-  img{
-    background: url(//oxm1.cc/img/holder.jpg) no-repeat center center;
+  img[lazy-type="bg"]{
+    background-size: cover;
+    background-position: center 0;
+    background-repeat: no-repeat;
+  }
+  img[lazy-src]{
+    background: url(//oxm1.cc/img/holder.jpg) no-repeat;
+    background-position: center center;
   }
   a{
     color:inherit;
@@ -133,6 +139,13 @@
         width:49%;
         height: 84px;
       }
+    }
+  }
+  .src-count-3{
+    .news-title{
+      max-height: 40px;
+      min-height: 22px;
+      height: auto;
     }
   }
 }
