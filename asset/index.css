@@ -59,9 +59,7 @@
 }
 .oxmod-news-ifeng .news-bottom-right {
   text-align: right;
-  background: url(comment.png) no-repeat right center;
   background-size: contain;
-  padding-right: 1.2em;
   font-size: .9rem;
   line-height: 1;
 }

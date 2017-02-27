@@ -59,8 +59,10 @@
                                 </xsl:choose>
                             </span>
                             <span class="news-bottom-right">
-
+<!--
                                 <xsl:value-of select="$commentlist[tid= $nid]/num"/>
+                                -->
+                                <xsl:value-of select="time"/>
                             </span>
                         </div>
 
