@@ -46,7 +46,7 @@
   line-height: 1.2;
 }
 .oxmod-news-ifeng .news-bottom {
-  color: #999;
+  color: #aaa;
   font-size: 0;
   padding-top: 5px;
 }
@@ -54,14 +54,12 @@
 .oxmod-news-ifeng .news-bottom-right {
   display: inline-block;
   width: 50%;
-  font-size: 14px;
+  font-size: 12px;
   box-sizing: border-box;
 }
 .oxmod-news-ifeng .news-bottom-right {
   text-align: right;
   background-size: contain;
-  font-size: .9rem;
-  line-height: 1;
 }
 .oxmod-news-ifeng .news-li-news .news-title {
   height: 40px;
