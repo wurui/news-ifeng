@@ -46,7 +46,7 @@
                             </div>
                         </xsl:if>
                         <div class="news-bottom">
-                            <span class="news-bottom-left">
+                            <nobr class="news-bottom-left">
                                 <xsl:choose>
                                     <xsl:when test="not(tag) and type ='topic' ">
                                         <i class="topic-tag">专题</i>
@@ -57,13 +57,13 @@
                                         </i>
                                     </xsl:otherwise>
                                 </xsl:choose>
-                            </span>
-                            <span class="news-bottom-right">
+                            </nobr>
+                            <nobr class="news-bottom-right">
 <!--
                                 <xsl:value-of select="$commentlist[tid= $nid]/num"/>
                                 -->
                                 <xsl:value-of select="time"/>
-                            </span>
+                            </nobr>
                         </div>
 
                     </li>
