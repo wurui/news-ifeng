@@ -12,8 +12,8 @@
                     <xsl:variable name="src-count" select="count(src/i)"/>
                     <xsl:variable name="fullpath">
                         <xsl:choose>
-                            <xsl:when test=" type = 'img'"><xsl:value-of select="$imgurl"/>?id=<xsl:value-of select="id"/></xsl:when>
-                            <xsl:otherwise><xsl:value-of select="$detailurl"/>?id=<xsl:value-of select="id"/></xsl:otherwise>
+                            <xsl:when test=" type = 'img'"><xsl:value-of select="$imgurl"/>?_id=<xsl:value-of select="_id"/></xsl:when>
+                            <xsl:otherwise><xsl:value-of select="$detailurl"/>?_id=<xsl:value-of select="_id"/></xsl:otherwise>
                         </xsl:choose>
                     </xsl:variable>
                     <li class="news-li news-li-{type} src-count-{$src-count}">
