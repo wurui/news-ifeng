@@ -1,6 +1,6 @@
 {
   "name": "news-ifeng",
   "version": "1.0.0",
-  "apiDependencies": ["news","target-count"]
+  "apiDependencies": ["news"]
 }
 

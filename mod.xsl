@@ -1,33 +1,26 @@
 <xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
-    <xsl:template match="*" name="a">
-
-    </xsl:template>
-
     <xsl:template match="/root" name="news-ifeng">
+        <xsl:param name="imgurl">imgs</xsl:param>
+        <xsl:param name="detailurl">detail</xsl:param>
         <!-- className 'J_OXMod' required  -->
         <div class="J_OXMod oxmod-news-ifeng" ox-mod="news-ifeng">
-            <xsl:variable name="commentlist" select="data/target-count/i"/>
             <ul>
                 <xsl:if test="count(data/news/i) &lt; 1">
                     <li>NO Data!</li>
                 </xsl:if>
                 <xsl:for-each select="data/news/i">
-                    <xsl:variable name="nid" select="_id"/>
                     <xsl:variable name="src-count" select="count(src/i)"/>
                     <xsl:variable name="fullpath">
                         <xsl:choose>
-                            <xsl:when test="contains(href,'{{news_id}}')">
-                                <xsl:value-of select="concat(substring-before(href,'{{news_id}}'),_id,substring-after(href,'{{news_id}}'))"/>
-                            </xsl:when>
-                            <xsl:otherwise><xsl:value-of select="href"/></xsl:otherwise>
+                            <xsl:when test=" type = 'imgs'"><xsl:value-of select="$imgurl"/>?id=<xsl:value-of select="id"/></xsl:when>
+                            <xsl:otherwise><xsl:value-of select="$detailurl"/>?id=<xsl:value-of select="id"/></xsl:otherwise>
                         </xsl:choose>
                     </xsl:variable>
                     <li class="news-li news-li-{type} src-count-{$src-count}">
-
                         <xsl:if test="mainpic">
                             <span class="news-li-pic">
                                 <a href="{$fullpath}">
-                                    <img src="//oxm1.cc/img/blank.png" lazy-w="100" lazy-src="{normalize-space(mainpic)}" lazy-type="bg"/>
+                                    <img src="//a.oxm1.cc/img/blank.png" lazy-w="100" lazy-src="{normalize-space(mainpic)}" lazy-type="bg"/>
                                 </a>
                             </span>
                         </xsl:if>
@@ -40,7 +33,7 @@
                             <div class="news-imgs">
                                 <a href="{$fullpath}">
                                     <xsl:for-each select="src/i">
-                                        <img lazy-src="{.}" lazy-type="bg" lazy-w="300" src="//oxm1.cc/img/blank.png"/>
+                                        <img lazy-src="{.}" lazy-type="bg" lazy-w="300" src="//a.oxm1.cc/img/blank.png"/>
                                     </xsl:for-each>
                                 </a>
                             </div>
