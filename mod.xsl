@@ -1,21 +1,15 @@
 <xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
-    <xsl:template match="/root" name="news-ifeng">
-        <xsl:param name="imgurl">imgs</xsl:param>
-        <xsl:param name="detailurl">detail</xsl:param>
+    <xsl:template match="/root" name="wurui.news-ifeng">
+        
         <!-- className 'J_OXMod' required  -->
         <div class="J_OXMod oxmod-news-ifeng" ox-mod="news-ifeng">
             <ul>
                 <xsl:if test="count(data/news/i) &lt; 1">
-                    <li>NO Data!</li>
+                    <li class="no-data">暂无数据!</li>
                 </xsl:if>
                 <xsl:for-each select="data/news/i">
                     <xsl:variable name="src-count" select="count(src/i)"/>
-                    <xsl:variable name="fullpath">
-                        <xsl:choose>
-                            <xsl:when test=" type = 'img'"><xsl:value-of select="$imgurl"/>?_id=<xsl:value-of select="_id"/></xsl:when>
-                            <xsl:otherwise><xsl:value-of select="$detailurl"/>?_id=<xsl:value-of select="_id"/></xsl:otherwise>
-                        </xsl:choose>
-                    </xsl:variable>
+                    <xsl:variable name="fullpath" select="LINK/detail"/>
                     <li class="news-li news-li-{type} src-count-{$src-count}">
                         <xsl:if test="mainpic">
                             <span class="news-li-pic">
@@ -24,11 +18,13 @@
                                 </a>
                             </span>
                         </xsl:if>
+                        <xsl:if test="title !=''">
                         <h3 class="news-title">
                             <a href="{$fullpath}">
                                 <xsl:value-of select="title"/>
                             </a>
                         </h3>
+                        </xsl:if>
                         <xsl:if test="$src-count > 0">
                             <div class="news-imgs">
                                 <a href="{$fullpath}">
