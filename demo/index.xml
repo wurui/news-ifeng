@@ -5,105 +5,118 @@
         <domain>local</domain>
     </env>
     <data>
-        <target-count>
+        <info-news>
             <i>
-                <tid>n1</tid>
-                <num>12</num>
-            </i>
-            <i>
-                <tid>n2</tid>
-                <num>23</num>
-            </i>
-        </target-count>
-        <news>
-            <i>
-                <_id>n1</_id>
-                <type>news</type>
+                
+                <sort>社会新闻</sort>
                 <title>山西一官员“办公室不雅照”被疯传：给钱还没完没了</title>
-                <mainpic>http://i.oxm1.cc/uploads/git/wurui/img/2ajyf6sh3Tizdxut8pRxh09Rq69.jpg@!240</mainpic>
-                <tag>11:48</tag>
-                <comment>4583</comment>
-                <href>news-detail?_id={{news_id}}</href>
+                <media>
+                    <i>
+                        <type>image</type>
+                        <src>http://i.oxm1.cc/uploads/git/wurui/img/2ajsrqjg3Tizjlb29pRrigwA1l1e.jpg</src>
+                    </i>
+                </media>
+                
+                <time>
 
+                    <M>11</M>
+                    <d>4</d>
+                    <H>12</H>
+                    <m>12</m>
+                </time>
             </i>
             <i>
-                <_id>n2</_id>
-                <type>img</type>
+                
+                <sort>社会新闻</sort>
                 <title>男子感动昔日朋友</title>
-                <tag>12:10</tag>
-                <comment>48282</comment>
-                <src>
-                    <i>http://i.oxm1.cc/uploads/git/wurui/img/2ajyf6sh3Tizdxut8pRxh09Rq69.jpg@!240</i>
-                    <i>http://i.oxm1.cc/uploads/git/wurui/img/2ajyf6sh3Tizdxut8pRxh09Rq69.jpg@!240</i>
-                </src>
-                <href>news-detail?_id=1</href>
+                <media>
+                    <i>
+                        <type>image</type>
+                        <src>http://i.oxm1.cc/uploads/git/wurui/img/2ajyf6sg3Tizdxut9pRkqzyE15e3.jpg</src>
+                    </i>
+                    <i>
+                        <type>image</type>
+                        <src>http://i.oxm1.cc/uploads/git/wurui/img/2ajyf6sg1Tizdxut9rRbsfeU1eym.jpg</src>
+                    </i>
+
+                </media>
+                
+                <time>
+
+                    <M>11</M>
+                    <d>4</d>
+                    <H>12</H>
+                    <m>12</m>
+                </time>
             </i>
             <i>
-                <type>news</type>
-                <title>山西一官员“办公室不雅照”被疯传：给钱还没完没了</title>
-                <mainpic>http://i.oxm1.cc/uploads/git/wurui/img/2ajyf6sh3Tizdxut8pRxh09Rq69.jpg@!240</mainpic>
-                <tag>12:10</tag>
-                <comment>48282</comment>
-            </i>
-            <i>
-                <type>topic</type>
-                <mainpic>http://i.oxm1.cc/uploads/git/wurui/img/2ajyf6sh3Tizdxut8pRxh09Rq69.jpg@!240</mainpic>
-                <comment>48282</comment>
+                
+                <sort>社会新闻</sort>
                 <title>中国农业户口将取消，农民和城镇居民一样</title>
+                <media>
+                    <i>
+                        <type>image</type>
+                        <src>http://i.oxm1.cc/uploads/git/wurui/img/2ajyf6sg1Tizdxut9rRbsfeU1eym.jpg</src>
+                    </i>
+                    <i>
+                        <type>image</type>
+                        <src>http://i.oxm1.cc/uploads/git/wurui/img/2a9t16if7Tj9jbv3alRo8lwA1uig-543.jpg</src>
+                    </i>
+                    <i>
+                        <type>image</type>
+                        <src>http://i.oxm1.cc/uploads/git/wurui/img/2a9k4s83aTj9s89dmiR8xw0A1pys-500.jpg</src>
+                    </i>
+
+
+                </media>
+                
+                <time>
+
+                    <M>11</M>
+                    <d>4</d>
+                    <H>12</H>
+                    <m>12</m>
+                </time>
             </i>
+            <!--暂时不支持vedio吧
             <i>
-                <type>img</type>
-                <title>男子感动昔日朋友</title>
-                <tag>12:10</tag>
-                <comment>48282</comment>
-                <src>
-                    <i>http://i.oxm1.cc/uploads/git/wurui/img/2ajyf6sh3Tizdxut8pRxh09Rq69.jpg@!240</i>
-                    <i>http://i.oxm1.cc/uploads/git/wurui/img/2ajyf6sh3Tizdxut8pRxh09Rq69.jpg@!240</i>
-                    <i>http://i.oxm1.cc/uploads/git/wurui/img/2ajyf6sh3Tizdxut8pRxh09Rq69.jpg@!240</i>
-                </src>
+                
+                <sort>社会新闻</sort>
+                <title>美国人烧星条旗 抗议特朗普当选总统</title>
+                <media>
+                    <i>
+                        <type>vedio</type>
+                        <src>http://i.oxm1.cc/uploads/git/wurui/img/2ajyf6sh3Tizdxut8pRxh09Rq69.jpg@!240</src>
+                    </i>
+
+                </media>
+                
+                <time>
+
+                    <M>11</M>
+                    <d>4</d>
+                    <H>12</H>
+                    <m>12</m>
+                </time>
             </i>
+        -->
+            
+        
             <i>
-                <type>news</type>
-                <title>山西一官员“办公室不雅照”被疯传：给钱还没完没了</title>
-                <mainpic>http://i.oxm1.cc/uploads/git/wurui/img/2ajyf6sh3Tizdxut8pRxh09Rq69.jpg@!240</mainpic>
-                <tag>11:48</tag>
-                <comment>4583</comment>
-            </i>
-            <i>
-                <type>ad</type>
-                <mainpic>http://i.oxm1.cc/uploads/git/wurui/img/2ajyf6sh3Tizdxut8pRxh09Rq69.jpg@!240</mainpic>
-                <tag>广告</tag>
-                <comment>48282</comment>
+                <sort>广告</sort>
+                <media>
+                    <i>
+                        <type>image</type>
+                        <src>http://i.oxm1.cc/uploads/git/wurui/img/2ajyf6sh3Tizdxut8pRxh09Rq69.jpg@!240</src>
+                    </i>
+                </media>
+                
+                
+                
                 <title>天啦！还有这么牛的微信号，盘前送牛股</title>
             </i>
-            <i>
-                <type>news</type>
-                <title>山西一官员“办公室不雅照”被疯传：给钱还没完没了</title>
-                <mainpic>http://i.oxm1.cc/uploads/git/wurui/img/2ajyf6sh3Tizdxut8pRxh09Rq69.jpg@!240</mainpic>
-                <tag>12:10</tag>
-                <comment>48282</comment>
-            </i>
-            <i>
-                <type>ad</type>
-                <tag>广告</tag>
-                <comment>48282</comment>
-                <src>
-                    <i>http://i.oxm1.cc/uploads/git/wurui/img/2ajyf6sh3Tizdxut8pRxh09Rq69.jpg@!240</i>
-                    <i>http://i.oxm1.cc/uploads/git/wurui/img/2ajyf6sh3Tizdxut8pRxh09Rq69.jpg@!240</i>
-                    <i>http://i.oxm1.cc/uploads/git/wurui/img/2ajyf6sh3Tizdxut8pRxh09Rq69.jpg@!240</i>
-                </src>
-            </i>
 
-            <i>
-                <type>video</type>
-                <title>美国人烧星条旗 抗议特朗普当选总统</title>
-                <tag>正点新闻</tag>
-                <comment>48282</comment>
-                <src>
-                    <i>http://i.oxm1.cc/uploads/git/wurui/img/2ajyf6sh3Tizdxut8pRxh09Rq69.jpg@!240</i>
-                </src>
-            </i>
-        </news>
+        </info-news>
     </data>
 
 </root>

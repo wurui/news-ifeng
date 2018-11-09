@@ -2,7 +2,7 @@
   "name": "news-ifeng",
   "version": "1.0.0",
   "apiDependencies": [{
-  	"name":"news",
+  	"name":"info-news",
   	"LINK":[
   		{
   			"name":"detail",
