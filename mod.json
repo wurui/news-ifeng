@@ -1,14 +1,17 @@
 {
+  "RULE_VERSION":"20190428",
   "name": "news-ifeng",
-  "version": "1.0.0",
-  "apiDependencies": [{
-  	"name":"info-news",
-  	"LINK":[
-  		{
-  			"name":"detail",
-  			"title":"查看详情"
-  		}
-  	]
-  }]
+  "apiDependencies": [
+    {
+      "name":"info-news",
+      "LINK":[
+        {
+          "name":"detail",
+          "title":"查看详情",
+          "target":"article-news-detail"
+        }
+      ]
+    }
+  ]
 }
 
